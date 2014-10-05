@@ -1,12 +1,14 @@
 ## Running Notes, 20141005
 
- * `Series()`: like ordered Python `dict` (pp. 112-115)
-    * `Series.values` => `array` datatype
-    * `Series.index` => `Int64Index` datatype
-    * `Series([...], index=[...])` => `Index` ("**object**") datatype, associative array
-    * `Series(dict)`: convert dict to Series
-    * `NaN marks missing data; detected by `isnull(Series)`; reverse with `notnull(Series)`
-    * `Series` + `Series`: natural join of keys ("**data alignment**")
+ * `Series()`: one-dimensional array with optional **index** of labels (pp. 112-115)
+    * **datatypes**
+      * `Series.values` => `array` datatype
+      * `Series.index` => `Int64Index` datatype
+      * `Series([...], index=[...])` => `Index` ("**object**") datatype, associative array
+      * `Series(dict)`: convert Python `dict` to `Series`
+    * **missing data**: `NaN marks missing data; detected by `isnull(Series)`; reverse with `notnull(Series)`
+    * **data alignment**: `Series` + `Series`: natural join of keys ("data alignment")
+    * **name**: `Series` and `Series.index` have assignable `name` attribute
  * `DataFrame()`
  
 
